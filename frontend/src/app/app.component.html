@@ -1,0 +1,43 @@
+<!--https://codinglatte.com/posts/angular/responsive-navbar-angular-flex-layout/-->
+
+<div class="first-toolbar">
+  <mat-toolbar class="center">
+    <span>SMASP</span>
+
+    <div fxShow="true" fxHide.lt-md="true">
+      <!--Os itens a seguir serão ocultados em SM and XS screen sizes-->
+    </div>
+  </mat-toolbar>
+</div>
+
+<div class="second-toolbar">
+  <mat-divider class="superior"></mat-divider>
+  <mat-toolbar>
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
+      <mat-icon *ngIf="sidenav.opened">close</mat-icon>
+    </button>
+
+    <div fxShow="true" fxHide.lt-md="true">
+      <!--Os itens a seguir serão ocultados em SM and XS screen sizes-->
+      <a mat-button>Menu Item 1</a> 
+      <a mat-button>Solicitações</a>
+      <a mat-button>Suporte</a>
+    </div>
+  </mat-toolbar>
+</div>
+
+<mat-sidenav-container fxFlexFill class="example-container">
+  <mat-sidenav #sidenav fxLayout="column">
+    <div fxLayout="column">
+      <a mat-button>Menu Item 1</a>
+      <mat-divider></mat-divider>
+      <a mat-button>Menu Item 2</a>
+      <mat-divider></mat-divider>
+      <a mat-button>Menu Item 3</a>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content fxFlexFill>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

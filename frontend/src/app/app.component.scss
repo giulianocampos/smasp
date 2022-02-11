@@ -1,0 +1,33 @@
+mat-toolbar {
+    background-color: #313552;
+}
+
+mat-sidenav {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #53565A;
+}
+
+mat-sidenav-content {
+    background-color: #E1E5EA;
+}
+
+.first-toolbar {
+    height: 40px;
+}
+
+.center {
+    justify-content: left;
+}
+
+.superior {
+    margin-top: 20px;
+}
+
+span {
+    font-size: 40px;
+}
