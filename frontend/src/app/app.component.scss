@@ -1,5 +1,5 @@
 mat-toolbar {
-    background-color: #313552;
+    background-color: #04293A;
 }
 
 mat-sidenav {
@@ -28,6 +28,14 @@ mat-sidenav-content {
     margin-top: 15px;
 }
 
-span {
-    font-size: 40px;
+span .title {
+    font-size: 30px;
+}
+
+a {
+    font-size: 16px;
+}
+
+mat-icon {
+    margin-right: 10px;
 }
