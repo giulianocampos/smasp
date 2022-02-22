@@ -19,20 +19,20 @@
 
     <div fxShow="true" fxHide.lt-md="true">
       <!--Os itens a seguir serão ocultados em SM and XS screen sizes--> 
-      <a mat-button>Início</a> 
-      <a mat-button>Mapeamento</a> 
-      <a mat-button>Solicitações</a>
-      <a mat-button>Suporte</a>
+      <a mat-button routerLink='inicio'>Início</a> 
+      <a mat-button routerLink='mapeamento'>Mapeamento</a> 
+      <a mat-button routerLink='solicitacoes'>Solicitações</a>
+      <a mat-button routerLink='suporte'>Suporte</a>
     </div>
   </mat-toolbar>
 </div>
 
 <mat-sidenav-container fxFlexFill class="example-container">
 
-  <mat-sidenav #sidenav fxLayout="column" opened="">
+  <mat-sidenav #sidenav fxLayout="column">
     <div fxLayout="column" class="items">
       <mat-nav-list>
-        <a mat-list-item routerLink="">
+        <a mat-list-item routerLink=''>
             <mat-icon id="home">home</mat-icon>
             <span>Início</span>
         </a>
@@ -42,12 +42,12 @@
             <span>Mapeamento</span>
         </a>
         <mat-divider></mat-divider>
-        <a mat-list-item routerLink='avisos'>
+        <a mat-list-item routerLink='solicitacoes'>
             <mat-icon id="announcement">announcement</mat-icon>
             <span>Solicitações</span>
         </a>
         <mat-divider></mat-divider>
-        <a mat-list-item routerLink=''>
+        <a mat-list-item routerLink='suporte'>
             <mat-icon id="headset">headset_mic</mat-icon>
             <span>Suporte</span>
         </a>

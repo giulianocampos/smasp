@@ -12,4 +12,8 @@ export class SolicitacoesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  add(): void {
+    console.log("Olá, mantenha o proceder")
+  }
+
 }

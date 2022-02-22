@@ -16,13 +16,15 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
+import { MapeamentoComponent } from './components/mapeamento/mapeamento.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SuporteComponent,
     SolicitacoesComponent,
-    HomeComponent
+    HomeComponent,
+    MapeamentoComponent
   ],
   imports: [
     BrowserModule,
