@@ -17,6 +17,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { MapeamentoComponent } from './components/mapeamento/mapeamento.component';
+import { CreateComponent } from './components/solicitacoes/create/create.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MapeamentoComponent } from './components/mapeamento/mapeamento.componen
     SuporteComponent,
     SolicitacoesComponent,
     HomeComponent,
-    MapeamentoComponent
+    MapeamentoComponent,
+    CreateComponent
   ],
   imports: [
     BrowserModule,

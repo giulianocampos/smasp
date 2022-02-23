@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-solicitacoes',
@@ -7,13 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SolicitacoesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
-  }
-
-  add(): void {
-    console.log("Olá, mantenha o proceder")
   }
 
 }

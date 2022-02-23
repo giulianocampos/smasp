@@ -1,3 +1,4 @@
+import { CreateComponent } from './components/solicitacoes/create/create.component';
 import { MapeamentoComponent } from './components/mapeamento/mapeamento.component';
 import { SolicitacoesComponent } from './components/solicitacoes/solicitacoes.component';
 import { SuporteComponent } from './components/suporte/suporte.component';
@@ -8,8 +9,9 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'suporte', component: SuporteComponent},
+  {path: 'mapeamento', component: MapeamentoComponent},
   {path: 'solicitacoes', component: SolicitacoesComponent},
-  {path: 'mapeamento', component: MapeamentoComponent}
+  {path: 'solicitacoes/criar', component: CreateComponent}
 ];
 
 @NgModule({
