@@ -6,6 +6,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SuporteComponent } from './components/suporte/suporte.component';
 import { SolicitacoesComponent } from './components/solicitacoes/solicitacoes.component';
 import { HomeComponent } from './components/home/home.component';
+import { MapeamentoComponent } from './components/mapeamento/mapeamento.component';
+import { CreateComponent } from './components/solicitacoes/create/create.component';
 
 //imports necessários
 
@@ -16,8 +18,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
-import { MapeamentoComponent } from './components/mapeamento/mapeamento.component';
-import { CreateComponent } from './components/solicitacoes/create/create.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { CreateComponent } from './components/solicitacoes/create/create.compone
     MatSidenavModule,
     MatIconModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
