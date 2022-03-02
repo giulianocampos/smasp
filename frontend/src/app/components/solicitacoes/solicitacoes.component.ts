@@ -17,7 +17,8 @@ export class SolicitacoesComponent implements OnInit {
 
   add(): void {
     const dialogRef = this.dialog.open(CreateComponent, {
-      width: '400px'
+      width: '400px',
+      panelClass: 'my-class'
     });
 
     dialogRef.afterClosed().subscribe(result => {
