@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-create',
@@ -8,13 +7,9 @@ import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 })
 export class CreateComponent implements OnInit {
 
-  constructor(public dialogRef: MatDialogRef<CreateComponent>) { }
+  constructor() { }
 
   ngOnInit(): void {
-  }
-
-  onNoClick(): void {
-    this.dialogRef.close();
   }
 
 }

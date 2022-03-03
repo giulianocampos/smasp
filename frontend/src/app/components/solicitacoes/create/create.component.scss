@@ -1,0 +1,27 @@
+.content {
+  padding: 16px;
+}
+
+mat-card {
+  justify-content: center;
+}
+
+mat-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+mat-card-title {
+  font-size: 18px;
+  text-align: center;
+}
+
+mat-card-subtitle {
+  font-size: 12px;
+  text-align: center;
+}
+
+mat-card-content {
+  display: flex;
+  flex-direction: column;
+}
