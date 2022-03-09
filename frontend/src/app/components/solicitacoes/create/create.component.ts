@@ -1,4 +1,6 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-create',
@@ -7,9 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateComponent implements OnInit {
 
-  constructor() { }
+  formSolicitacao: FormGroup = this.formBuilder.group({
+    nome: ['', Validators.required],
+    endereco: ['', Validators.required],
+    bairro: ['', Validators.required],
+    cep: ['', Validators.required]
+  })
+
+  constructor(private router: Router, private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
+  }
+
+  done(): void {
+    console.log("está funfando")
+  }
+
+  back(): void {
+    this.router.navigate(['solicitacoes'])
   }
 
 }

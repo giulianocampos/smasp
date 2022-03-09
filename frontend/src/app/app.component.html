@@ -21,6 +21,7 @@
       <!--Os itens a seguir serão ocultados em SM and XS screen sizes--> 
       <a mat-button routerLink='inicio'>Início</a> 
       <a mat-button routerLink='mapeamento'>Mapeamento</a> 
+      <a mat-button routerLink='cadastros'>Cadastros</a> 
       <a mat-button routerLink='solicitacoes'>Solicitações</a>
       <a mat-button routerLink='suporte'>Suporte</a>
     </div>
@@ -37,21 +38,31 @@
             <span>Início</span>
         </a>
         <mat-divider></mat-divider>
+
         <a mat-list-item routerLink='mapeamento'>
             <mat-icon id="room">room</mat-icon>
             <span>Mapeamento</span>
         </a>
         <mat-divider></mat-divider>
+
+        <a mat-list-item routerLink='cadastros'>
+            <mat-icon id="forest">forest</mat-icon>
+            <span>Cadastros</span>
+        </a>
+        <mat-divider></mat-divider>
+
         <a mat-list-item routerLink='solicitacoes'>
             <mat-icon id="announcement">announcement</mat-icon>
             <span>Solicitações</span>
         </a>
         <mat-divider></mat-divider>
+
         <a mat-list-item routerLink='suporte'>
             <mat-icon id="headset">headset_mic</mat-icon>
             <span>Suporte</span>
         </a>
         <mat-divider></mat-divider>
+
       </mat-nav-list>
     </div>
   </mat-sidenav>

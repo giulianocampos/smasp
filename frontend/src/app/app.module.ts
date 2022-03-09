@@ -21,8 +21,11 @@ import { MatListModule } from '@angular/material/list';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
+import { CadastrosComponent } from './components/cadastros/cadastros.component';
+import { CreateCadastroComponent } from './components/cadastros/create-cadastro/create-cadastro.component';
+import { MatRadioModule } from '@angular/material/radio';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,9 @@ import { MatCardModule } from '@angular/material/card';
     SolicitacoesComponent,
     HomeComponent,
     MapeamentoComponent,
-    CreateComponent
+    CreateComponent,
+    CadastrosComponent,
+    CreateCadastroComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +53,9 @@ import { MatCardModule } from '@angular/material/card';
     MatDialogModule,
     MatInputModule,
     FormsModule,
-    MatCardModule
+    MatCardModule,
+    ReactiveFormsModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]

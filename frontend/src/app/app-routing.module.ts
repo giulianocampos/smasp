@@ -1,3 +1,5 @@
+import { CreateCadastroComponent } from './components/cadastros/create-cadastro/create-cadastro.component';
+import { CadastrosComponent } from './components/cadastros/cadastros.component';
 import { CreateComponent } from './components/solicitacoes/create/create.component';
 import { MapeamentoComponent } from './components/mapeamento/mapeamento.component';
 import { SolicitacoesComponent } from './components/solicitacoes/solicitacoes.component';
@@ -10,6 +12,8 @@ const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'suporte', component: SuporteComponent},
   {path: 'mapeamento', component: MapeamentoComponent},
+  {path: 'cadastros', component: CadastrosComponent},
+  {path: 'cadastros/criar', component: CreateCadastroComponent},
   {path: 'solicitacoes', component: SolicitacoesComponent},
   {path: 'solicitacoes/criar', component: CreateComponent}
 ];
