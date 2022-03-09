@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
@@ -15,9 +16,13 @@ export class CreateCadastroComponent implements OnInit {
     cep: ['', Validators.required]
   })
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder, private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  back() {
+    this.router.navigate(['cadastros'])
   }
 
 }
