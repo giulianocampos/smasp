@@ -5,6 +5,7 @@
   mat-card {
     justify-content: center;
     border-radius: 10px;
+    background-color: #424242;
   }
   
   mat-card-content {
@@ -44,6 +45,7 @@
   
     .done {
       margin-right: 10px;
+      background-color: green;
     }
   
     .close {
