@@ -1,28 +1,36 @@
 <div class="content" fxLayout fxLayoutAlign="center center">
-  <mat-card class="mat-elevation-z15" fxFlex="100%" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="30%" fxFlex.lg="30%"
-    fxFlex.xl="15%">
+  <mat-card class="mat-elevation-z15" fxFlex="100%" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="40%" fxFlex.lg="30%"
+    fxFlex.xl="20%">
     <mat-card-header>
       <mat-card-title>Crie uma Solicitação</mat-card-title>
       <mat-card-subtitle>Preencha as informações abaixo</mat-card-subtitle>
     </mat-card-header>
     <form>
+      
       <mat-card-content [formGroup]="formSolicitacao">
-        
+        <mat-form-field appearance="outline">
+          <mat-label>Selecione o Tipo de Serviço</mat-label>
+          <mat-select formControlName="servico">
+            <mat-option value="1">Retirada</mat-option>
+            <mat-option value="2">Poda</mat-option>
+          </mat-select>
+        </mat-form-field>
+
         <mat-form-field appearance="outline">
           <mat-label>Endereço e Número</mat-label>
           <input matInput formControlName="endereco">
         </mat-form-field>
-        
+
         <mat-form-field appearance="outline">
           <mat-label>Bairro</mat-label>
           <input matInput formControlName="bairro">
         </mat-form-field>
-        
+
         <mat-form-field appearance="outline">
           <mat-label>CEP</mat-label>
           <input matInput formControlName="cep">
         </mat-form-field>
-        
+
         <mat-form-field appearance="outline">
           <mat-label>Nome do Solicitante</mat-label>
           <input matInput formControlName="nome">
@@ -37,8 +45,8 @@
             <mat-icon>close</mat-icon>
           </button>
         </div>
-
       </mat-card-content>
+
     </form>
   </mat-card>
 </div>
