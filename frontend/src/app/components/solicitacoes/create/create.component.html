@@ -17,6 +17,15 @@
         </mat-form-field>
 
         <mat-form-field appearance="outline">
+          <mat-label>Selecione a Prioridade do Serviço</mat-label>
+          <mat-select formControlName="prioridade">
+            <mat-option value="1">Baixa</mat-option>
+            <mat-option value="2">Média</mat-option>
+            <mat-option value="3">Alta (Emergência)</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
           <mat-label>Endereço e Número</mat-label>
           <input matInput formControlName="endereco">
         </mat-form-field>

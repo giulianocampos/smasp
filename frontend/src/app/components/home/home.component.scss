@@ -4,3 +4,26 @@
     margin-top: 12px;
     font-size: 20px;
 }
+
+.botoes {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .cadastros {
+        background-color: #2E7D32;
+    }
+
+    .solicitacoes {
+        background-color: #1A1A40;
+    }
+
+    .mapeamento {
+        background-color: #00695C;
+    }
+}
+
+button {
+    margin-bottom: 10px;
+    border-radius: 10px;
+}

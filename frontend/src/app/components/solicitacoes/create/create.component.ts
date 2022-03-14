@@ -11,6 +11,7 @@ export class CreateComponent implements OnInit {
 
   formSolicitacao: FormGroup = this.formBuilder.group({
     servico: ['', Validators.required],
+    prioridade: ['', Validators.required],
     nome: ['', Validators.required],
     endereco: ['', Validators.required],
     bairro: ['', Validators.required],

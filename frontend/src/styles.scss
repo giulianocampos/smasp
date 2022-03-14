@@ -14,10 +14,8 @@ $custom-theme: mat-dark-theme($custom-app-primary, $custom-app-secondary, $custo
 //imports de fontes
 @import url('https://fonts.googleapis.com/css2?family=Coda&display=swap');
 
-
 html, body { height: 100%; }
 body { margin: 0; }
-
 
 * {
     font-family: 'Coda', cursive;
