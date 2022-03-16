@@ -11,6 +11,7 @@ export class CreateCadastroComponent implements OnInit {
 
   formCadastro: FormGroup = this.formBuilder.group({
     nome: ['', Validators.required],
+    situacao: ['', Validators.required],
     endereco: ['', Validators.required],
     bairro: ['', Validators.required],
     cep: ['', Validators.required]
