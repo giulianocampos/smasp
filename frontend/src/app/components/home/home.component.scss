@@ -5,7 +5,7 @@
     font-size: 20px;
 }
 
-.botoes {
+.content .botoes {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -21,10 +21,10 @@
     .mapeamento {
         background-color: #00695C;
     }
-}
-
-button {
-    margin-bottom: 10px;
-    border-radius: 10px;
-    font-size: 15px;
+    
+    button {
+        margin-bottom: 10px;
+        border-radius: 10px;
+        font-size: 15px;
+    }
 }

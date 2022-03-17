@@ -10,6 +10,10 @@ mat-card {
   mat-card-header {
     justify-content: center ;
     margin-bottom: 10px;
+    
+    mat-card-title {
+      font-size: 18px;
+    }
   }
 
   mat-card-content {
@@ -27,9 +31,6 @@ mat-card {
 }
 
 
-mat-card-title {
-  font-size: 18px;
-}
 
 mat-card-subtitle {
   font-size: 12px;

@@ -3,7 +3,7 @@ mat-toolbar {
     background-color: #1A1A40;
     
     .title {
-        font-size: 20px;
+        font-size: 30px;
         font-weight: bold;
     }
 }
@@ -26,18 +26,12 @@ mat-sidenav-content {
     height: 40px;
 }
 
-.center {
-    justify-content: left;
+.second-toolbar {
+    .superior {
+        margin-top: 15px;
+    }
 }
 
-.superior {
-    margin-top: 15px;
-}
-
-
-a {
-    font-size: 16px;
-}
 
 mat-icon {
     margin-right: 10px;

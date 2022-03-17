@@ -12,13 +12,12 @@ $custom-theme: mat-dark-theme($custom-app-primary, $custom-app-secondary, $custo
 @include angular-material-theme($custom-theme);
 
 //imports de fontes
-@import url('https://fonts.googleapis.com/css2?family=Coda&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 html, body { height: 100%; }
 body { margin: 0; }
 
 * {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: Roboto, 'Open Sans', sans-serif;
 }
 

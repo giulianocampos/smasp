@@ -1,7 +1,7 @@
 <!--https://codinglatte.com/posts/angular/responsive-navbar-angular-flex-layout/-->
 
 <div class="first-toolbar">
-  <mat-toolbar class="center">
+  <mat-toolbar>
     <span class="title">SMASP</span>
     <div fxShow="true" fxHide.lt-md="true">
       <!--Os itens a seguir serão ocultados em SM and XS screen sizes-->
@@ -17,19 +17,19 @@
       <mat-icon *ngIf="sidenav.opened">close</mat-icon>
     </button>
 
-    <div fxShow="true" fxHide.lt-md="true">
+    <div fxShow="true" fxHide.lt-md="true" class="toolbar-buttons">
       <!--Os itens a seguir serão ocultados em SM and XS screen sizes-->
-      <a mat-button routerLink=''>Início</a>
-      <a mat-button routerLink='mapeamento'>Mapeamento</a>
-      <a mat-button routerLink='cadastros'>Cadastros</a>
-      <a mat-button routerLink='solicitacoes'>Solicitações</a>
-      <a mat-button routerLink='suporte'>Suporte</a>
+      <a mat-button routerLink=''>INÍCIO</a>
+      <a mat-button routerLink='mapeamento'>MAPEAMENTO</a>
+      <a mat-button routerLink='cadastros'>CADASTROS</a>
+      <a mat-button routerLink='solicitacoes'>SOLICITAÇÕES</a>
+      <a mat-button routerLink='suporte'>SUPORTE</a>
     </div>
   </mat-toolbar>
 </div>
 
 <mat-sidenav-container fxFlexFill class="example-container">
-  <mat-sidenav #sidenav fxLayout="column" mode="over">
+  <mat-sidenav #sidenav fxLayout="column" mode="over" opened="">
     <div fxLayout="column" class="items">
       <mat-nav-list>
         <a mat-list-item routerLink=''>
@@ -68,9 +68,5 @@
   <mat-sidenav-content fxFlexFill>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
-
-  <div class="footer" #footer>
-    Hi !! I am footer !!!!
-  </div>
 
 </mat-sidenav-container>
