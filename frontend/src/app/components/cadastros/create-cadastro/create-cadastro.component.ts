@@ -1,3 +1,4 @@
+import { CadastroService } from './../../services/cadastro.service';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
@@ -17,12 +18,18 @@ export class CreateCadastroComponent implements OnInit {
     cep: ['', Validators.required]
   })
 
-  constructor(private formBuilder: FormBuilder, private router: Router) { }
+  constructor(private formBuilder: FormBuilder, private router: Router, private cadastroService: CadastroService) { }
 
   ngOnInit(): void {
   }
 
-  back() {
+  done(): void {
+    this.cadastroService.create(this.formCadastro.value).subscribe(() => {
+      this.router.navigate(['cadastros'])
+    })
+  }
+
+  back(): void {
     this.router.navigate(['cadastros'])
   }
 

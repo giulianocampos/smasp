@@ -1,11 +1,41 @@
-<div class="title">
-    <strong>Para onde deseja seguir?</strong>
-</div>
+<div class="content">
+    <div class="title">
+        <strong>Para onde deseja seguir?</strong>
+    </div>
 
-<div class="content" fxLayout fxLayoutAlign="center center">
-    <div class="botoes">
-        <button mat-flat-button class="cadastros" routerLink="cadastros">Cadastros de Árvores</button>
-        <button mat-flat-button class="solicitacoes" routerLink="solicitacoes">Solicitações de Serviços</button>
-        <button mat-flat-button class="mapeamento">Mapeamento</button>
+    <div class="first-card" fxLayout fxLayoutAlign="center center">
+        <mat-card class="mat-elevation-z15 cadastro" fxFlex="100%" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="40%"
+            fxFlex.lg="30%" fxFlex.xl="20%" routerLink="cadastros">
+            <mat-card-title-group>
+                <mat-card-title>Cadastros de Árvores</mat-card-title>
+            </mat-card-title-group>
+            <mat-card-content>
+                Aqui você pode cadastrar uma árvore que ainda não esteja no sistema!
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+    <div class="second-card" fxLayout fxLayoutAlign="center center">
+        <mat-card class="mat-elevation-z15 solicitacao" fxFlex="100%" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="40%"
+            fxFlex.lg="30%" fxFlex.xl="20%" routerLink="solicitacoes">
+            <mat-card-title-group>
+                <mat-card-title>Solicitações de Serviços</mat-card-title>
+            </mat-card-title-group>
+            <mat-card-content>
+                Aqui você pode solicitar o serviço necessário!
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+    <div class="third-card" fxLayout fxLayoutAlign="center center">
+        <mat-card class="mat-elevation-z15 mapeamento" fxFlex="100%" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="40%"
+            fxFlex.lg="30%" fxFlex.xl="20%" routerLink="mapeamento">
+            <mat-card-title-group>
+                <mat-card-title>Mapeamento</mat-card-title>
+            </mat-card-title-group>
+            <mat-card-content>
+                Aqui você consultar o mapa da cidade e traçar rotas!
+            </mat-card-content>
+        </mat-card>
     </div>
 </div>

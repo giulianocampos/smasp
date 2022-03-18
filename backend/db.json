@@ -1,0 +1,28 @@
+{
+  "cadastros": [
+    {
+      "id": 1,
+      "endereco": "Rua Juscelino Kudecheque",
+      "bairro": "Jd. Rodolfo Pirani",
+      "cep": "06430979",
+      "nome": "Irineu da Silva",
+      "situacao": "Bom"
+    },
+    {
+      "nome": "Irineu da Silva ",
+      "situacao": "1",
+      "endereco": "Rua Martinho da Vila",
+      "bairro": "Pq. São Rafael",
+      "cep": "76548764",
+      "id": 2
+    },
+    {
+      "nome": "Irineu da Silva ",
+      "situacao": "Crítico",
+      "endereco": "Avenida Rudge Ramos",
+      "bairro": "Rudge Ramos",
+      "cep": "34567843",
+      "id": 3
+    }
+  ]
+}

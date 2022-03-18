@@ -27,6 +27,7 @@ import { CadastrosComponent } from './components/cadastros/cadastros.component';
 import { CreateCadastroComponent } from './components/cadastros/create-cadastro/create-cadastro.component';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { MatSelectModule } from '@angular/material/select';
     MatCardModule,
     ReactiveFormsModule,
     MatRadioModule,
-    MatSelectModule
+    MatSelectModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
