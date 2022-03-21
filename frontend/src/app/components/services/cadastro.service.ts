@@ -16,4 +16,13 @@ export class CadastroService {
   create(cadastros: Cadastros): Observable<Cadastros> {
     return this.http.post<Cadastros>(this.baseUrl, cadastros)
   }
+
+  read(): Observable<Cadastros[]> {
+    return this.http.get<Cadastros[]>(this.baseUrl)
+  }
+  
+  readById(id: number): Observable<Cadastros> {
+    const url = `${this.baseUrl}/${id}`
+    return this.http.get<Cadastros>(url)
+  }
 }

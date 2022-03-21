@@ -23,6 +23,22 @@
       "bairro": "Rudge Ramos",
       "cep": "34567843",
       "id": 3
+    },
+    {
+      "nome": "Irineu da Silva",
+      "situacao": "Atenção",
+      "endereco": "Rua Enéias das Ideias",
+      "bairro": "Rudge Ramos",
+      "cep": "76454935",
+      "id": 4
+    },
+    {
+      "nome": "Irineu da Silva",
+      "situacao": "Crítica",
+      "endereco": "Rua mestre dos magos",
+      "bairro": "eu vi gnomos",
+      "cep": "45654233",
+      "id": 5
     }
   ]
 }

@@ -1,5 +1,5 @@
 <div class="content" fxLayout fxLayoutAlign="center center">
-    <mat-card class="mat-elevation-z15" fxFlex="100%" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="30%" fxFlex.lg="30%"
+    <mat-card class="mat-elevation-z15" fxFlex="100%" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="40%" fxFlex.lg="30%"
         fxFlex.xl="20%">
         <mat-card-header>
             <mat-card-title>Cadastre uma Árvore</mat-card-title>
@@ -27,12 +27,12 @@
                     <input matInput formControlName="nome">
                 </mat-form-field>
 
-                    <label id="example-radio-group-label">1. Selecione o Estado Atual da Árvore</label>
-                    <mat-radio-group aria-label="Select an option" formControlName="situacao">
-                        <mat-radio-button value="Bom">Bom</mat-radio-button>
-                        <mat-radio-button value="Atenção">Atenção</mat-radio-button>
-                        <mat-radio-button value="Crítico">Crítico</mat-radio-button>
-                    </mat-radio-group>
+                <label id="example-radio-group-label">1. Selecione o Estado Atual da Árvore</label>
+                <mat-radio-group aria-label="Select an option" formControlName="situacao">
+                    <mat-radio-button value="Bom">Bom</mat-radio-button>
+                    <mat-radio-button value="Atenção">Atenção</mat-radio-button>
+                    <mat-radio-button value="Crítico">Crítico</mat-radio-button>
+                </mat-radio-group>
 
                 <div class="botoes">
                     <button mat-mini-fab class="done" (click)="done()">

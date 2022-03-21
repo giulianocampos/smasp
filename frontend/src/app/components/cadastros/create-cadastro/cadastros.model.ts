@@ -4,4 +4,5 @@ export interface Cadastros {
     bairro: string
     cep: string
     nome: string
+    situacao: string
 }

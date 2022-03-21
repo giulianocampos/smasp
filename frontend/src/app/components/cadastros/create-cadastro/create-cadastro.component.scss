@@ -22,8 +22,12 @@
 
     mat-radio-button {
       margin-top: 10px;
-      margin-left: 12px;
+      margin-left: 10px;
       margin-bottom: 16px;
+    }
+
+    mat-radio-group {
+      text-align: center;
     }
   }
   
