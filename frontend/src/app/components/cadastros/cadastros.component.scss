@@ -28,6 +28,10 @@ mat-card {
     mat-card-content {
         text-align: center;
 
+        .situacao {
+            color: yellow;
+        }
+
         .cep {
             margin-top: -10px;
         }
@@ -39,6 +43,10 @@ mat-card {
 
     mat-card-actions {
         text-align: center;
+
+        button mat-icon {
+            vertical-align: bottom;
+        }
 
         .create {
             margin-right: 10px;

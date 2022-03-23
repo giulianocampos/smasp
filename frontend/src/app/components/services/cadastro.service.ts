@@ -12,7 +12,6 @@ export class CadastroService {
 
   constructor(private http: HttpClient) { }
 
-
   create(cadastros: Cadastros): Observable<Cadastros> {
     return this.http.post<Cadastros>(this.baseUrl, cadastros)
   }

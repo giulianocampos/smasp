@@ -1,19 +1,24 @@
 <div class="content">
     <div class="title">
-        <strong>Cadastros</strong>
+        <strong>Cadastro de Árvore</strong>
         <button mat-icon-button (click)="add()">
             <mat-icon class="add-icon">add_circle_outline</mat-icon>
         </button>
     </div>
 
+    <div class="title">
+        <h2>Cadastros Atuais</h2>
+    </div>
+
     <div fxLayout="row wrap" fxLayoutGap="10px grid">
-        <div fxFlex="33.3%" fxFlex.xs="100%" fxFlex.sm="33.3%" fxFlex.md="25%" *ngFor="let cadastro of cadastros">
+        <div fxFlex="33.3%" fxFlex.xs="100%" fxFlex.sm="33.3%" fxFlex.md="25%" fxFlex.lg="20%"
+            *ngFor="let cadastro of cadastros">
             <mat-card class="mat-elevation-z15">
                 <mat-card-title>{{cadastro.bairro}}</mat-card-title>
                 <mat-card-subtitle>{{cadastro.endereco}}</mat-card-subtitle>
                 <mat-card-content>
-                    <p class="situacao">Estado: {{cadastro.situacao}}</p>
                     <p class="cep">CEP: {{cadastro.cep}}</p>
+                    <p class="situacao">Estado: {{cadastro.situacao}}</p>
                     <p class="id">ID: {{cadastro.id}}</p>
                 </mat-card-content>
                 <mat-divider inset></mat-divider>

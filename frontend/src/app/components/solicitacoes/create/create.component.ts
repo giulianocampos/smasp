@@ -1,3 +1,4 @@
+import { SolicitacaoService } from './../../services/solicitacao.service';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -18,13 +19,15 @@ export class CreateComponent implements OnInit {
     cep: ['', Validators.required]
   })
 
-  constructor(private router: Router, private formBuilder: FormBuilder) { }
+  constructor(private router: Router, private formBuilder: FormBuilder, private solicitacaoService: SolicitacaoService) { }
 
   ngOnInit(): void {
   }
 
   done(): void {
-    console.log("está funfando")
+    this.solicitacaoService.create(this.formSolicitacao.value).subscribe(() => {
+      this.router.navigate(['solicitacoes'])
+    })
   }
 
   back(): void {

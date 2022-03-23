@@ -1,10 +1,66 @@
+
 .title {
     text-align: center;
     color: #53565A;
     font-size: 20px;
-
+    
 }
 
 .add-icon {
     vertical-align: sub;
+}
+
+.content {
+    padding: 16px;
+}
+
+mat-card {
+
+    border-radius: 30px;
+
+    mat-card-title {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    mat-card-subtitle {
+        text-align: center;
+    }
+
+    mat-card-content {
+        text-align: center;
+
+        .servico {
+            color: yellow;
+        }
+
+        .prioridade {
+            color: yellow;
+            margin-top: -10px;
+        }
+
+        .cep {
+            margin-top: -10px;
+        }
+
+        .id {
+            margin-top: -10px;
+        }
+    }
+
+    mat-card-actions {
+        text-align: center;
+
+        button mat-icon {
+            vertical-align: bottom;
+        }
+
+        .create {
+            margin-right: 10px;
+        }
+
+        .delete {
+            background-color: #e42929;
+        }
+    }
 }

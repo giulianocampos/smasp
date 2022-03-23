@@ -1,6 +1,38 @@
-<div class="title">
-    <strong>Solicitações Atuais</strong>
-    <button mat-icon-button (click)="add()">
-        <mat-icon class="add-icon">add_circle_outline</mat-icon>
-    </button>
+<div class="content">
+    <div class="title">
+        <strong>Solicitação de Serviço</strong>
+        <button mat-icon-button (click)="add()">
+            <mat-icon class="add-icon">add_circle_outline</mat-icon>
+        </button>
+    </div>
+
+    <div class="title">
+        <h2>Serviços Atuais</h2>
+    </div>
+
+    <div fxLayout="row wrap" fxLayoutGap="10px grid">
+        <div fxFlex="33.3%" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="33.3%" fxFlex.lg="20%"
+            *ngFor="let solicitacao of solicitacoes">
+            <mat-card class="mat-elevation-z15">
+                <mat-card-title>{{solicitacao.bairro}}</mat-card-title>
+                <mat-card-subtitle>{{solicitacao.endereco}}</mat-card-subtitle>
+                <mat-card-content>
+                    <p class="cep">CEP: {{solicitacao.cep}}</p>
+                    <p class="servico">Tipo de Serviço: {{solicitacao.servico}}</p>
+                    <p class="prioridade">Prioridade: {{solicitacao.prioridade}}</p>
+                    <p class="nome">Solicitante: {{solicitacao.nome}}</p>
+                    <p class="id">ID: {{solicitacao.id}}</p>
+                </mat-card-content>
+                <mat-divider inset></mat-divider>
+                <mat-card-actions>
+                    <button mat-mini-fab class="create">
+                        <mat-icon>create</mat-icon>
+                    </button>
+                    <button mat-mini-fab class="delete">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
 </div>

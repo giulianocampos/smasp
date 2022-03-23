@@ -1,3 +1,5 @@
+import { Solicitacoes } from './create/solicitacoes.model';
+import { SolicitacaoService } from './../services/solicitacao.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -8,9 +10,14 @@ import { Router } from '@angular/router';
 })
 export class SolicitacoesComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  solicitacoes: Solicitacoes[];
+
+  constructor(private router: Router, private solicitacaoService: SolicitacaoService) { }
 
   ngOnInit(): void {
+    this.solicitacaoService.read().subscribe(solicitacoes => {
+      this.solicitacoes = solicitacoes
+    })
   }
 
   add(): void {

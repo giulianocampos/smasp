@@ -10,7 +10,7 @@
     },
     {
       "nome": "Irineu da Silva ",
-      "situacao": "1",
+      "situacao": "Bom",
       "endereco": "Rua Martinho da Vila",
       "bairro": "Pq. São Rafael",
       "cep": "76548764",
@@ -38,6 +38,53 @@
       "endereco": "Rua mestre dos magos",
       "bairro": "eu vi gnomos",
       "cep": "45654233",
+      "id": 5
+    }
+  ],
+  "solicitacoes": [
+    {
+      "id": 1,
+      "servico": "Retirada",
+      "prioridade": "Alta",
+      "endereco": "Avenida Voluntários da Patria",
+      "bairro": "Vila Mariana",
+      "cep": "87574392",
+      "nome": "Benzema da Silva"
+    },
+    {
+      "servico": "Poda",
+      "prioridade": "Baixa",
+      "nome": "Irineu da Silva",
+      "endereco": "Rua Voluntários da Pátria, 1234",
+      "bairro": "Vila Mariana",
+      "cep": "983174883",
+      "id": 2
+    },
+    {
+      "servico": "Retirada",
+      "prioridade": "Alta",
+      "nome": "Irineu da Silva",
+      "endereco": "Avenida Perimetral",
+      "bairro": "San Andreas",
+      "cep": "456789345",
+      "id": 3
+    },
+    {
+      "servico": "Retirada",
+      "prioridade": "Média",
+      "nome": "Mestre Irineu",
+      "endereco": "Rua Evangelista de Souza, 1634",
+      "bairro": "Pq. Capuava",
+      "cep": "45215959",
+      "id": 4
+    },
+    {
+      "servico": "Poda",
+      "prioridade": "Alta",
+      "nome": "Irinéia das Ideias",
+      "endereco": "teste teste teste, 123A",
+      "bairro": "Vila Matilde",
+      "cep": "5643223",
       "id": 5
     }
   ]
