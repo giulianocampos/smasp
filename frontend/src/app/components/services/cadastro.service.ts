@@ -24,4 +24,9 @@ export class CadastroService {
     const url = `${this.baseUrl}/${id}`
     return this.http.get<Cadastros>(url)
   }
+
+  delete(id: number): Observable<Cadastros> {
+    const url = `${this.baseUrl}/${id}`
+    return this.http.delete<Cadastros>(url)
+  }
 }
