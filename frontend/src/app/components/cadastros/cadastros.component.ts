@@ -1,7 +1,8 @@
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { CadastroService } from './../services/cadastro.service';
 import { Cadastros } from './create-cadastro/cadastros.model';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
 
@@ -14,14 +15,24 @@ export class CadastrosComponent implements OnInit {
 
   cadastros: Cadastros[];
 
-  constructor(private router: Router, private cadastrosService: CadastroService, http: HttpClient) { }
+  formCadastro: FormGroup = this.formBuilder.group({
+    id: [],
+    endereco: [],
+    bairro: [],
+    cep: [],
+    nome: [],
+    situacao: []
+  })
+
+  constructor(private router: Router, private cadastrosService: CadastroService, http: HttpClient, private formBuilder: FormBuilder, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.cadastrosService.read().subscribe(cadastros => {
       this.cadastros = cadastros
       console.log(cadastros)
-    })
+    });
   }
+
 
   add(): void {
     this.router.navigate(['cadastros/criar'])
@@ -48,9 +59,13 @@ export class CadastrosComponent implements OnInit {
           icon: 'success',
           confirmButtonText: 'Ok',
           confirmButtonColor: 'green'
-        })
-      } else if (
-        /* Read more about handling dismissals below */
+        }),
+          this.cadastrosService.delete(this.formCadastro.value.id).subscribe(() => {
+            this.router.navigate(['cadastros'])
+          });
+      }
+
+      else if (
         result.dismiss === Swal.DismissReason.cancel
       ) {
         Swal.fire({
@@ -58,10 +73,8 @@ export class CadastrosComponent implements OnInit {
           icon: 'success',
           confirmButtonText: 'Ok',
           confirmButtonColor: 'green'
-        })
+        });
       }
     })
   }
-
-
 }

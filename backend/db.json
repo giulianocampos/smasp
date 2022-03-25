@@ -31,14 +31,6 @@
       "bairro": "Rudge Ramos",
       "cep": "76454935",
       "id": 4
-    },
-    {
-      "nome": "Irineu da Silva",
-      "situacao": "Crítica",
-      "endereco": "Rua mestre dos magos",
-      "bairro": "eu vi gnomos",
-      "cep": "45654233",
-      "id": 5
     }
   ],
   "solicitacoes": [
