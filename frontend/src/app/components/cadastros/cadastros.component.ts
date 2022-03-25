@@ -23,44 +23,45 @@ export class CadastrosComponent implements OnInit {
     })
   }
 
+  add(): void {
+    this.router.navigate(['cadastros/criar'])
+  }
+
   delete(): void {
-    Swal.fire({
-      customClass: {
-        confirmButton: 'btn btn-success',
-        cancelButton: 'btn btn-danger'
-      },
-      buttonsStyling: false
-    })
-    
     Swal.fire({
       width: '400px',
       title: 'Você tem certeza?',
       text: "Você não poderá reverter a exclusão!",
       icon: 'warning',
       showCancelButton: true,
-      confirmButtonText: 'Sim, deletar!',
+      confirmButtonText: 'Sim, excluir!',
+      confirmButtonColor: 'green',
       cancelButtonText: 'Não, cancelar!',
+      cancelButtonColor: '#e42929',
       reverseButtons: true
     }).then((result) => {
       if (result.isConfirmed) {
-        Swal.fire(
-          'Excluído!',
-          'O cadastro foi deletado!',
-          'success',
-        )
+        Swal.fire({
+          width: '400px',
+          title: 'Sucesso!',
+          text: 'Cadastro Excluído',
+          icon: 'success',
+          confirmButtonText: 'Ok',
+          confirmButtonColor: 'green'
+        })
       } else if (
         /* Read more about handling dismissals below */
         result.dismiss === Swal.DismissReason.cancel
       ) {
-        Swal.fire(
-          'Operação cancelada!'
-        )
+        Swal.fire({
+          title: 'Operação Cancelada',
+          icon: 'success',
+          confirmButtonText: 'Ok',
+          confirmButtonColor: 'green'
+        })
       }
     })
   }
 
-  add(): void {
-    this.router.navigate(['cadastros/criar'])
-  }
 
 }
