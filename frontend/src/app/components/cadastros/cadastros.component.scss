@@ -15,6 +15,7 @@
 mat-card {
 
     border-radius: 30px;
+    min-height: 190px;
 
     mat-card-title {
         text-align: center;
@@ -45,7 +46,7 @@ mat-card {
         text-align: center;
 
         button mat-icon {
-            vertical-align: bottom;
+            vertical-align: middle;
         }
 
         .update {

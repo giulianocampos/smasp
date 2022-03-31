@@ -25,6 +25,7 @@ export class CreateCadastroComponent implements OnInit {
 
   done(): void {
     this.cadastroService.create(this.formCadastro.value).subscribe(() => {
+      this.cadastroService.showMessage('Cadastro Criado!')
       this.router.navigate(['cadastros'])
     })
   }

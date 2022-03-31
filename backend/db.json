@@ -1,35 +1,35 @@
 {
   "cadastros": [
     {
-      "id": 1,
-      "endereco": "Rua Juscelino Kudecheque",
-      "bairro": "Jd. Rodolfo Pirani",
-      "cep": "06430979",
       "nome": "Irineu da Silva",
-      "situacao": "Bom"
+      "situacao": "Bom",
+      "endereco": "Rua Cesar Menezes, 1234",
+      "bairro": "Jardim Imperial",
+      "cep": "546547834",
+      "id": 1
     },
     {
-      "nome": "Irineu da Silva ",
+      "nome": "Irineu da Silva",
       "situacao": "Bom",
-      "endereco": "Rua Martinho da Vila",
-      "bairro": "Pq. São Rafael",
-      "cep": "76548764",
+      "endereco": "Rua Voluntários da Pátria, 1234",
+      "bairro": "Capão Redondo",
+      "cep": "43435969",
       "id": 2
     },
     {
-      "nome": "Irineu da Silva ",
+      "nome": "Irineu da Silva",
       "situacao": "Crítico",
-      "endereco": "Avenida Rudge Ramos",
-      "bairro": "Rudge Ramos",
-      "cep": "34567843",
+      "endereco": "Avenida das Nações, 654",
+      "bairro": "San Andreas",
+      "cep": "52415820",
       "id": 3
     },
     {
       "nome": "Irineu da Silva",
-      "situacao": "Atenção",
-      "endereco": "Rua Enéias das Ideias",
-      "bairro": "Rudge Ramos",
-      "cep": "76454935",
+      "situacao": "Bom",
+      "endereco": "Rua das Bandeiras, 1234",
+      "bairro": "Jd. Las Vegas",
+      "cep": "67876546",
       "id": 4
     }
   ],

@@ -2,11 +2,11 @@
   <mat-card class="mat-elevation-z15" fxFlex="100%" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="40%" fxFlex.lg="30%"
     fxFlex.xl="20%">
     <mat-card-header>
-      <mat-card-title>Crie uma Solicitação</mat-card-title>
-      <mat-card-subtitle>Preencha as informações abaixo</mat-card-subtitle>
+      <mat-card-title>Tem certeza da exclusão?</mat-card-title>
+      <mat-card-subtitle>Esta ação é irrerversível</mat-card-subtitle>
     </mat-card-header>
     <form>
-      
+
       <mat-card-content [formGroup]="formSolicitacao">
         <mat-form-field appearance="outline">
           <mat-label>Selecione o Tipo de Serviço</mat-label>
@@ -46,7 +46,7 @@
         </mat-form-field>
 
         <div class="botoes">
-          <button mat-mini-fab class="done" (click)="done()" [disabled]="!formSolicitacao.valid">
+          <button mat-mini-fab class="done" (click)="done()" >
             <mat-icon>done</mat-icon>
           </button>
 
