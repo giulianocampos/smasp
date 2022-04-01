@@ -38,10 +38,10 @@
       "id": 1,
       "servico": "Retirada",
       "prioridade": "Alta",
+      "nome": "Benzema da Silva",
       "endereco": "Avenida Voluntários da Patria",
       "bairro": "Vila Mariana",
-      "cep": "87574392",
-      "nome": "Benzema da Silva"
+      "cep": "87574392"
     },
     {
       "servico": "Poda",
@@ -71,13 +71,13 @@
       "id": 4
     },
     {
+      "id": 5,
       "servico": "Poda",
       "prioridade": "Alta",
       "nome": "Irinéia das Ideias",
       "endereco": "teste teste teste, 123A",
       "bairro": "Vila Matilde",
-      "cep": "5643223",
-      "id": 5
+      "cep": "5643223"
     }
   ]
 }

@@ -31,6 +31,8 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { UpdateCadastroComponent } from './components/cadastros/update-cadastro/update-cadastro.component';
+import { UpdateSolicitacaoComponent } from './components/solicitacoes/update-solicitacao/update-solicitacao.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     CadastrosComponent,
     CreateCadastroComponent,
     DeleteCadastroComponent,
-    DeleteSolicitacaoComponent
+    DeleteSolicitacaoComponent,
+    UpdateCadastroComponent,
+    UpdateSolicitacaoComponent
   ],
   imports: [
     BrowserModule,

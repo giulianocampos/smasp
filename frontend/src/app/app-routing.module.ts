@@ -1,3 +1,5 @@
+import { UpdateSolicitacaoComponent } from './components/solicitacoes/update-solicitacao/update-solicitacao.component';
+import { UpdateCadastroComponent } from './components/cadastros/update-cadastro/update-cadastro.component';
 import { DeleteSolicitacaoComponent } from './components/solicitacoes/delete-solicitacao/delete-solicitacao.component';
 import { DeleteCadastroComponent } from './components/cadastros/delete-cadastro/delete-cadastro.component';
 import { CreateCadastroComponent } from './components/cadastros/create-cadastro/create-cadastro.component';
@@ -21,6 +23,7 @@ const routes: Routes = [
       { path: '', component: CadastrosComponent },
       { path: 'criar', component: CreateCadastroComponent },
       { path: 'delete/:id', component: DeleteCadastroComponent },
+      { path: 'update/:id', component: UpdateCadastroComponent },
     ],
   },
 
@@ -29,7 +32,8 @@ const routes: Routes = [
     children: [
       { path: '', component: SolicitacoesComponent },
       { path: 'criar', component: CreateComponent },
-      { path: 'delete/:id', component: DeleteSolicitacaoComponent}
+      { path: 'delete/:id', component: DeleteSolicitacaoComponent},
+      { path: 'update/:id', component: UpdateSolicitacaoComponent}
     ]
   }
 ];

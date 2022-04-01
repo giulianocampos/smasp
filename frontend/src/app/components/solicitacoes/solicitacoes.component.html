@@ -11,7 +11,7 @@
     </div>
 
     <div fxLayout="row wrap" fxLayoutGap="10px grid">
-        <div fxFlex="33.3%" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="33.3%" fxFlex.lg="20%"
+        <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="33.3%" fxFlex.lg="20%"
             *ngFor="let solicitacao of solicitacoes">
             <mat-card class="mat-elevation-z15">
                 <mat-card-title>{{solicitacao.bairro}}</mat-card-title>
@@ -25,7 +25,7 @@
                 </mat-card-content>
                 <mat-divider inset></mat-divider>
                 <mat-card-actions>
-                    <button mat-mini-fab class="create">
+                    <button mat-mini-fab class="create" routerLink="update/{{solicitacao.id}}">
                         <mat-icon>create</mat-icon>
                     </button>
                     <button mat-mini-fab class="delete" routerLink="delete/{{solicitacao.id}}">

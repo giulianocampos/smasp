@@ -42,4 +42,9 @@ export class SolicitacaoService {
     const url = `${this.baseUrl}/${id}`
     return this.http.delete<Solicitacoes>(url)
   }
+
+  update(solicitacoes: Solicitacoes): Observable<Solicitacoes> {
+    const url = `${this.baseUrl}/${solicitacoes.id}`
+    return this.http.put<Solicitacoes>(url, solicitacoes)
+  }
 }

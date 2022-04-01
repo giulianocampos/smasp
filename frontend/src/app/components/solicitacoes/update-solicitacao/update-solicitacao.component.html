@@ -1,0 +1,62 @@
+<p>update-solicitacao works!</p>
+<div class="content" fxLayout fxLayoutAlign="center center">
+    <mat-card class="mat-elevation-z15" fxFlex="100%" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="40%" fxFlex.lg="30%"
+      fxFlex.xl="20%">
+      <mat-card-header>
+        <mat-card-title>Alterar Solicitação</mat-card-title>
+        <mat-card-subtitle>Atualize os Dados abaixo</mat-card-subtitle>
+      </mat-card-header>
+      <form>
+  
+        <mat-card-content [formGroup]="formSolicitacao">
+          <mat-form-field appearance="outline">
+            <mat-label>Selecione o Tipo de Serviço</mat-label>
+            <mat-select formControlName="servico">
+              <mat-option value="Retirada">Retirada</mat-option>
+              <mat-option value="Poda">Poda</mat-option>
+            </mat-select>
+          </mat-form-field>
+  
+          <mat-form-field appearance="outline">
+            <mat-label>Selecione a Prioridade do Serviço</mat-label>
+            <mat-select formControlName="prioridade">
+              <mat-option value="Baixa">Baixa</mat-option>
+              <mat-option value="Média">Média</mat-option>
+              <mat-option value="Alta">Alta (Emergência)</mat-option>
+            </mat-select>
+          </mat-form-field>
+  
+          <mat-form-field appearance="outline">
+            <mat-label>Endereço e Número</mat-label>
+            <input matInput formControlName="endereco">
+          </mat-form-field>
+  
+          <mat-form-field appearance="outline">
+            <mat-label>Bairro</mat-label>
+            <input matInput formControlName="bairro">
+          </mat-form-field>
+  
+          <mat-form-field appearance="outline">
+            <mat-label>CEP</mat-label>
+            <input matInput formControlName="cep">
+          </mat-form-field>
+  
+          <mat-form-field appearance="outline">
+            <mat-label>Nome do Solicitante</mat-label>
+            <input matInput formControlName="nome">
+          </mat-form-field>
+  
+          <div class="botoes">
+            <button mat-mini-fab class="done" (click)="done()">
+              <mat-icon>done</mat-icon>
+            </button>
+  
+            <button mat-mini-fab class="close" (click)="back()">
+              <mat-icon>close</mat-icon>
+            </button>
+          </div>
+        </mat-card-content>
+  
+      </form>
+    </mat-card>
+  </div>
