@@ -17,7 +17,8 @@ export class CadastroService {
     this.snackBar.open(msg, 'X', {
       duration: 3000, 
       horizontalPosition: 'center',
-      verticalPosition: 'top'
+      verticalPosition: 'top',
+      //panelClass: isError? ['errorMsg']: ['successMsg']
     });
   }
 
@@ -37,5 +38,10 @@ export class CadastroService {
   delete(id: number): Observable<Cadastros> {
     const url = `${this.baseUrl}/${id}`
     return this.http.delete<Cadastros>(url)
+  }
+
+  update(cadastros: Cadastros): Observable<Cadastros> {
+    const url = `${this.baseUrl}/${cadastros.id}`
+    return this.http.put<Cadastros>(url, cadastros)
   }
 }

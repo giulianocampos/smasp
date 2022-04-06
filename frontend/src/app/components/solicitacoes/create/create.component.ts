@@ -27,6 +27,7 @@ export class CreateComponent implements OnInit {
   done(): void {
     this.solicitacaoService.create(this.formSolicitacao.value).subscribe(() => {
       this.router.navigate(['solicitacoes'])
+      this.solicitacaoService.showMessage('Solicitação Criada!')
     })
   }
 
