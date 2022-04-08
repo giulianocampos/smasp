@@ -19,9 +19,9 @@ export class MapeamentoComponent implements OnInit {
     (Mapboxgl as any).accessToken = environment.mapkey;
     this.mapa = new Mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/mapbox/streets-v11',
+      //style: 'mapbox://styles/mapbox/streets-v11',
       //style: 'mapbox://styles/mapbox/dark-v10',
-      //style: 'mapbox://styles/mapbox/navigation-night-v1',
+      style: 'mapbox://styles/mapbox/navigation-night-v1',
       //center: [-46.654204, -23.563388], //posição de início
       center: [-46.6358499, -23.5550799], //posição de início
       zoom: 12.5
