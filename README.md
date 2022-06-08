@@ -2,7 +2,7 @@
 
 O que é? 
 <div>
-  SMASP é um sistema de monitoramento do ciclo de vida das árvores da cidade de SP e é um projeto pessoal. Além disso, está sendo desenvolvido para meu TCC (Trabalho de conclusão de curso). 
+  SMASP é um sistema de monitoramento do ciclo de vida das árvores e é um projeto pessoal. Além disso, está sendo desenvolvido para meu TCC (Trabalho de conclusão de curso). 
 </div>
 
 ## Contextualização
